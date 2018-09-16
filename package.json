@@ -1,0 +1,23 @@
+{
+  "name": "webpage-screenshot",
+  "version": "0.0.1-alpha",
+  "description": "A simple util to take screenshots of webpages",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint ."
+  },
+  "author": "Karthik M A M <karthik_m_a_m@outlook.com> (https://karthikmam.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  },
+  "dependencies": {
+    "puppeteer": "^1.8.0",
+    "throng": "^4.0.0"
+  }
+}
