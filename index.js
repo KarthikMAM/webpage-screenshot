@@ -4,8 +4,12 @@ const throng = require('throng')
 const puppeteer = require('puppeteer')
 const screenshot = require('./screenshot')
 
-throng(() => {
-  const browserInstance = puppeteer.launch()
+throng(2, () => {
+  const browserInstance = puppeteer.launch({
+    args: [
+      '--no-sandbox',
+    ],
+  })
 
   http.createServer((request, response) => {
     const { query } = url.parse(request.url, true)

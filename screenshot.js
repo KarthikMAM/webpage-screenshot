@@ -1,7 +1,5 @@
-const puppeteer = require('puppeteer')
-
 module.exports = async (browserInstance, url) => {
-  const browser = await puppeteer.launch()
+  const browser = await browserInstance
   const page = await browser.newPage()
 
   await page.goto(url)
